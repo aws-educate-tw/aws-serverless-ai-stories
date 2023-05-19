@@ -140,6 +140,7 @@ export class BackendStack extends cdk.Stack {
         arn: createStoryFunc.functionArn,
         roleArn: schedulerRole.roleArn,
       },
+      scheduleExpressionTimezone: 'Asia/Taipei',
     });
 
     // Permissions

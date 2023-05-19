@@ -1,5 +1,5 @@
 {
   "stage": "stg",
-  "email": "XXXXX",
+  "email": "g1@awseducate.tw",
   "bedtimeCron": "cron(15 19 * * ? *)"
 }
