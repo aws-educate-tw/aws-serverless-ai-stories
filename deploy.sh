@@ -8,6 +8,12 @@
 ## aws configure
 ## ./deploy.sh
 
+# Check if AWS credentials are configured before installing anything
+aws sts get-caller-identity --query "Account" --output text
+if [[ $? -ne 0 ]] ; then
+    echo "AWS not configured properly!" 
+    exit 1
+fi
 # Install Node Using NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 chmod +x ~/.nvm/nvm.sh
