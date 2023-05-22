@@ -2,4 +2,5 @@
   "stage": "stg",
   "email": "g1@awseducate.tw",
   "bedtimeCron": "cron(15 19 * * ? *)"
+  // https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html#eb-cron-expressions
 }
