@@ -1,3 +1,3 @@
 #!/bin/bash
 cd backend/
-cdk destroy --force
+cdk destroy --all --force
