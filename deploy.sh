@@ -16,3 +16,6 @@ newgrp docker
 # Deploy
 npm run install:all
 npm run deploy
+
+# Populate Database
+npm run populate-db

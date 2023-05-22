@@ -35,6 +35,7 @@ export class BackendStack extends cdk.Stack {
     // Stories Bucket
     const audioBucket = new Bucket(this, 'StoriesAudioBucket', {
       removalPolicy: cdk.RemovalPolicy.DESTROY,
+      autoDeleteObjects: true
     });
 
     // Table to store all characters
