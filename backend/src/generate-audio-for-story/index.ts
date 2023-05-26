@@ -20,9 +20,10 @@ export async function handler(event: EventBridgeEvent<'StoryGenerated', StoryGen
   // create the audio
   const data = await pollyClient.send(
     new SynthesizeSpeechCommand({
+      Engine: 'neural',
       OutputFormat: OutputFormat.MP3,
       Text: `This is a story called ${event.detail.title}. ${event.detail.description}`,
-      VoiceId: VoiceId.Justin,
+      VoiceId: VoiceId.Zhiyu,
       SampleRate: '24000',
     })
   );

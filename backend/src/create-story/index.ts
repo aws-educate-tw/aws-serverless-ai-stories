@@ -46,8 +46,7 @@ export async function handler() {
   const selectedScene = unmarshall(scenes[Math.floor(Math.random() * scenes.length)]);
 
   const prompt = `
-  Write a title and a rhyming story on ${characters.length} main characters called ${characters?.map((character: any) => character.name).join(' and ')}.
-  The story needs to be set within the scene ${selectedScene.description} and be at least 200 words long
+  請就${characters.length}個主角，名為${characters?.map((character: any) => character.name).join(' and ')}，創作一個繁體中文故事。故事需要設定在${selectedScene.description}的場景中，並且至少需要有 200 個字。
 `;
 
   const result = await openai.createCompletion({
